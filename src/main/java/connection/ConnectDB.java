@@ -31,7 +31,7 @@ public class ConnectDB
     }
     public void initConnection(String langage, String server, String database, String port, String username, String password) throws SQLException
     {
-        connection=DriverManager.getConnection("jdbc:"+langage+server+":"+port+database,username,password);
+        connection=DriverManager.getConnection("jdbc:"+langage+server+"/"+database,username,password);
     }
     public void initConnection(String url) throws SQLException
     {
